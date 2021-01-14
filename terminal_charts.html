@@ -1,0 +1,958 @@
+﻿<!--<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <!-- Basic Page Needs
+      ================================================== -->
+    <meta charset="utf-8">
+    <title>KwikPay Dashboard</title>
+    <!-- SEO Meta
+      ================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="distribution" content="global">
+    <meta name="revisit-after" content="2 Days">
+    <meta name="robots" content="ALL">
+    <meta name="rating" content="8 YEARS">
+    <meta name="Language" content="en-us">
+    <meta http-equiv="reply-to" content="">
+    <meta name="GOOGLEBOT" content="NOARCHIVE">
+    <!-- Mobile Specific Metas
+      ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- CSS
+      ================================================== -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.jqueryui.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Signika:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/daterangepicker.css"/>
+
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Favicons
+        ================================================== -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <!--[if gte IE 9]>
+    <style type="text/css">
+        .gradient {
+            filter: none;
+        }
+    </style>
+    <![endif]-->
+    <!-- JS
+        ================================================== -->
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+
+
+</head>
+<body>
+<!-- HEADER START -->
+
+<!-- HEADER END -->
+<!-- CONTAINER START -->
+
+<section>
+    <div class="content">
+
+        <div class="row_content">
+            <div class="sidebar_left contentscroll mCustomScrollbar">
+                <div class="sidebar_left_menu">
+                    <h3>Provider Details<span class="plusminus">-</span></h3>
+                    <ul style="display: block;">
+                        <li><a href="#">Provider Details</a></li>
+                        <li><a href="#">Free ride definition</a></li>
+                        <li><a href="#">Free ride duration</a></li>
+                    </ul>
+                    <h3>Amusement locations <span class="plusminus">+</span></h3>
+                    <ul>
+                        <li><a href="#">Amusement locations</a></li>
+                    </ul>
+
+                    <h3>Sales Data<span class="plusminus">+</span></h3>
+                    <ul>
+                        <li><a href="#">Payment transaction</a></li>
+                        <li><a href="#">App transaction data</a></li>
+                        <li><a href="#">Cash collection data</a></li>
+                    </ul>
+                    <h3>Charts<span class="plusminus">+</span></h3>
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Machine charts</a></li>
+                    </ul>
+                    <h3>Reports<span class="plusminus">+</span></h3>
+                    <ul>
+                        <li><a href="#">Report</a></li>
+                        <li><a href="#">Consolidated report</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right_wrapper_content">
+                <div class="top_bar">
+                    <div class="top_bar_left">
+                        <p>Good afternoon! Game on Today's Date : 2/12/2019 12:58:27 PM</p>
+                    </div>
+                    <div class="top_bar_right">
+                        <div class="top_bar_menu">
+                            <a href="#"><span><img src="images/top_icon.png"/></span><i class="fa fa-chevron-down"></i></a>
+                            <ul class="top_bar_down">
+                                <li><a href="#">My profile</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="wrapper_dashboard_scroll contentscroll mCustomScrollbar">
+                    <div class="wrapper_dashboard">
+                        <div class="titel_location titel_location_noicon"><h1>Terminal Charts</h1></div>
+
+                        <div class="dashboard_row_clear">
+                            <div class="dashboard_left_text1">
+                                <div class="dashboard_box_padding">
+                                    <div class="dashboard_center_padding">
+                                        <h4>Total sales</h4>
+                                        <h5><strong>£</strong> 1000</h5>
+                                    </div>
+                                </div>
+                                <div class="dashboard_box_padding active">
+                                    <div class="dashboard_center_padding">
+                                        <h4>Total transaction</h4>
+                                        <h5>500</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="dashboard_right_text1 inputpicker_content_box">
+
+
+                                <div class="input_picker_dashboard">
+                                    <input type="text" class="form-control demo_picker"/>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="clear"></div>
+                        <div class="new_location_form1">
+
+                            <div class="vendingmachine_row_clear2 " style='display: flex; flex-direction: column;' >
+                                <div class="vending_machin2_left " style = 'margin-bottom: 30px; width: 100%'>
+                                   
+                                    <div class="dashboard_weekly_right " >
+                                        <div class="dashboard_weekly_titel1" style='width: 45%'>
+                                        <div id = 'mainTerminalInfo' style='width: 50%; padding: 25px; display: flex;  flex-direction: column; align-items: end; border: 1px solid #8CD600; border-radius: 26px;'>
+                                                <!-- <p>Terminal Location: ... </p>
+                                                <p>Machine mapped: </p>
+                                                    
+                                                    <div style = 'width: 75%; display: flex; flex-direction: column; align-items: center;'>
+                                                        <p>name</p>
+                                                        <p>number</p>
+                                                    </div> -->
+                                            </div>
+                                        </div>
+                                            <!-- <div style="
+                                            width: 330px;
+                                            padding: 25px;
+                                            border: 1px solid #8CD600;
+                                            border-radius: 26px;
+                                        ">
+                                                <p style="text-align: start" id='terminalLocation'></p>
+                                                <div style="width: 176px">
+                                                <span>Machine mapped: </span>
+                                                <span id = 'machineName1'> </span>
+                                                <p id = 'machineNumber1'  style="    text-align: end;"></p>
+                                                <p id = 'machineName2' style="    text-align: end;"></p>
+                                                <p id = 'machineNumber2' style="    text-align: end;"></p>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                        <div class="dashboard_current_left1" id='linechart_machine_parent'>
+                                            <canvas id="linechart_machine" height="250"></canvas>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="vending_machin2_right" style='width: 100%;'>
+                                   
+                                    <div class="dashboard_weekly_right machinechart_right2" id = 'machineBarChartParent'>
+                                            <canvas id="machineBarChart" height="300"></canvas>
+                                    
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- CONTAINER END -->
+<!-- FOOTER START -->
+
+<footer></footer>
+
+<!-- FOOTER END -->
+
+</body>
+
+
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/dataTables.jqueryui.min.js "></script>
+
+
+<script src="js/app.config.js"></script>
+
+
+<script src="js/bootstrap.min.js"></script>
+
+
+<script src="js/app.min.js"></script>
+
+
+<script src="js/chart.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+<script src="js/jquery.flot.cust.min.js"></script>
+<script src="js/jquery.flot.orderBar.min.js"></script>
+<script type="text/javascript" src="js/dp.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+<script>
+
+
+    $(document).ready(function () {
+        $('#example').DataTable();
+    });
+
+    (function ($) {
+        $(window).on("load", function () {
+
+            $("a[rel='load-content']").click(function (e) {
+                e.preventDefault();
+                var url = $(this).attr("href");
+                $.get(url, function (data) {
+                    $(".contentscroll .mCSB_container").append(data); //load new content inside .mCSB_container
+                    //scroll-to appended content
+                    $(".contentscroll").mCustomScrollbar("scrollTo", "h2:last");
+                });
+            });
+
+            $(".contentscroll").delegate("a[href='top']", "click", function (e) {
+                e.preventDefault();
+                $(".contentscroll").mCustomScrollbar("scrollTo", $(this).attr("href"));
+            });
+
+        });
+    })(jQuery);
+
+
+    var x, i, j, selElmnt, a, b, c;
+    /*look for any elements with the class "custom-select":*/
+    x = document.getElementsByClassName("custom-select");
+    for (i = 0; i < x.length; i++) {
+        selElmnt = x[i].getElementsByTagName("select")[0];
+        /*for each element, create a new DIV that will act as the selected item:*/
+        a = document.createElement("DIV");
+        a.setAttribute("class", "select-selected");
+        a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+        x[i].appendChild(a);
+        /*for each element, create a new DIV that will contain the option list:*/
+        b = document.createElement("DIV");
+        b.setAttribute("class", "select-items select-hide");
+        for (j = 1; j < selElmnt.length; j++) {
+            /*for each option in the original select element,
+            create a new DIV that will act as an option item:*/
+            c = document.createElement("DIV");
+            c.innerHTML = selElmnt.options[j].innerHTML;
+            c.addEventListener("click", function (e) {
+                /*when an item is clicked, update the original select box,
+                and the selected item:*/
+                var y, i, k, s, h;
+                s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                h = this.parentNode.previousSibling;
+                for (i = 0; i < s.length; i++) {
+                    if (s.options[i].innerHTML == this.innerHTML) {
+                        s.selectedIndex = i;
+                        h.innerHTML = this.innerHTML;
+                        y = this.parentNode.getElementsByClassName("same-as-selected");
+                        for (k = 0; k < y.length; k++) {
+                            y[k].removeAttribute("class");
+                        }
+                        this.setAttribute("class", "same-as-selected");
+                        break;
+                    }
+                }
+                h.click();
+            });
+            b.appendChild(c);
+        }
+        x[i].appendChild(b);
+        a.addEventListener("click", function (e) {
+            /*when the select box is clicked, close any other select boxes,
+            and open/close the current select box:*/
+            e.stopPropagation();
+            closeAllSelect(this);
+            this.nextSibling.classList.toggle("select-hide");
+            this.classList.toggle("select-arrow-active");
+        });
+    }
+
+    function closeAllSelect(elmnt) {
+        /*a function that will close all select boxes in the document,
+        except the current select box:*/
+        var x, y, i, arrNo = [];
+        x = document.getElementsByClassName("select-items");
+        y = document.getElementsByClassName("select-selected");
+        for (i = 0; i < y.length; i++) {
+            if (elmnt == y[i]) {
+                arrNo.push(i)
+            } else {
+                y[i].classList.remove("select-arrow-active");
+            }
+        }
+        for (i = 0; i < x.length; i++) {
+            if (arrNo.indexOf(i)) {
+                x[i].classList.add("select-hide");
+            }
+        }
+    }
+
+    /*if the user clicks anywhere outside the select box,
+    then close all select boxes:*/
+    document.addEventListener("click", closeAllSelect);
+
+
+    $('.demo_picker').daterangepicker({
+        startDate: moment().subtract(3, 'month'),
+        endDate: moment(),
+        showCustomRangeLabel: false,
+        "ranges": {
+            'Last 30 Days': [ moment().subtract(29, 'days'), moment() ],
+            '3 Month': [ moment().subtract(3, 'month'), moment() ],
+            '6 Month': [ moment().subtract(6, 'month'), moment() ],
+        },
+    }, async (start, end, label) => {
+        //console.log( document.getElementById('canvas_piechart'))
+        //document.getElementById('canvas_piechart').remove()
+        let isCompressed = false;
+        let dayName = null
+        const {ctx, ctx1} = window.machineChart.createCanvas();
+        switch (label) {
+            case 'Last 30 Days':
+                dayName = '30DAYS';
+                isCompressed = false;
+                break;
+            case '3 Month':
+                dayName = 'THREE_MONTH';
+                isCompressed = false;
+                break;
+            case '6 Month':
+                dayName = 'SIX_MONTH';
+                isCompressed = false;
+                break;
+            default:
+                dayName = '30DAYS';
+                break;
+        }
+        await window.machineChart.getDateRange(start, end, dayName, isCompressed);
+        
+        window.machineChart.updateData = { start, end, dayName, isCompressed };
+       
+
+        let arrBarHzData = []
+        let holeData = {all: 0}
+        window.machineChart.machineLineData.map(el => holeData = {...holeData, all: holeData.all + el.CONTACTLESS_SALES})
+        window.machineChart.machineLineData.forEach((el, index) => {
+                arrBarHzData.push({
+                    label: el.MACHINE_NAME,
+                    data: [el.CONTACTLESS_SALES],
+                    backgroundColor: window.hzBarColors[index].backgroundColor,
+                    borderColor: window.hzBarColors[index].borderColor,
+                    borderWidth: 2,
+                
+                },)
+            })
+            arrBarHzData.push({
+                label: 'Both',
+                data: [holeData.all],
+                backgroundColor: [
+                    'rgba(255, 206, 86, 0.2)',
+            
+                ],
+                borderColor: [
+                    'rgba(255, 206, 86, 1)',
+                ],
+                borderWidth: 2,
+            
+            })
+            
+        const myNewChart = new Chart(ctx, {
+            type: 'line',
+            data: window.machineChart.lineData,
+            options: window.lineOptions
+        });
+        var myHzBarChart = new Chart(ctx1, {
+        type: 'horizontalBar',
+        data: arrBarHzData.length <= 1 ? {} : {
+        labels:  ['Machine contactless sales'],
+        datasets: arrBarHzData
+    },
+    options: {...window.hzBarOptions, scales: {  ...window.hzBarOptions.scales, xAxes: [{ ...window.hzBarOptions.scales.xAxes[0], ticks: {...window.hzBarOptions.scales.xAxes[0].ticks, max: holeData.all}}]}}
+});
+
+    });
+    
+</script>
+
+<script type="text/javascript">
+
+(async () => {
+    const div = document.getElementById("linechart_machine_parent")
+    div.style.height = 513
+        function MachineChart(skip) {
+            this.appSales = 0;
+            this.cashSales = 0;
+            this.contactlessSales = 0;
+            this.res = null;
+            this.dates = null;
+            this.lineData = null;
+            this.skip = skip;
+            this.machineList = [];
+
+            this.getMs = function (date) {
+                return new Date(date).setHours(0, 0, 0, 0);
+            }
+            this.getCorrectDateFormat = function (date) {
+                date = new Date(date);
+                return date.getFullYear() + '-' + ('0' + (date.getMonth() + 1)).slice(-2) + '-' + ('0' + (date.getDate())).slice(-2);
+            }
+            this.fetchData = async function (name) {
+                const reqBody = JSON.stringify({
+                    "APISERVICE": "KP_AMUSEMENT_TERMINAL_CHART_DATA",
+                    "LOGIN_USER_ID": "7",
+                    "DURATION": name,
+                    "TERMINAL_NUMBER": "1350009557"
+                })
+                const response = await fetch('https://api.kwikpay.be/kwikpayapi/jsonrequest', {
+                    method: 'POST',
+                    header: 'Content-Type: application/json',
+                    body: reqBody
+                });
+                return await response.json();
+            }
+            this.createLoader = function () {
+                const parentNode = document.getElementById('linechart_machine_parent')
+                parentNode.style.position = 'relative';
+                const spinner = document.createElement('img')
+                spinner.id = 'loader'
+                spinner.style.position = 'absolute'
+                spinner.style.top = '50%'
+                spinner.style.left = '50%'
+                spinner.style.width = '50px'
+                spinner.style.height = '50px'
+                spinner.style.transform = 'translate(-50%, -50%)'
+                spinner.src = './images/spinner.gif'
+                parentNode.appendChild(spinner)
+            }
+            this.deleteLoader = function () {
+                document.getElementById('loader').remove()
+            }
+            this.getDateRange = async function (start, end, name, isCompressed) {
+
+                this.dates = this.generateDataObject(this.getMs(start), this.getMs(end), {
+                    APP_SALES: 0,
+                    CASH_SALES: 0,
+                    CONTACTLESS_SALES: 0,
+                    terminal: '',
+                    machineName: {}
+                });
+                this.createLoader()
+                try {
+                    this.res = await this.fetchData(name);
+                    this.machineContactless(this.res.KPRESPONSE.CHART_DATA_LIST)
+                    this.res.KPRESPONSE.CHART_DATA_LIST && this.deleteLoader();
+                    this.createMachineList();
+                    this.displayData(isCompressed, start, true);
+                } catch (e) {
+                    //document.getElementById("linechart_machine").remove();
+                    // const noData = document.createElement('div');
+                    // noData.setAttribute('id', 'no_data')
+                    // noData.innerText = 'No data'
+                    //const div = document.getElementById("linechart_machine_parent").appendChild(noData);
+                    this.deleteLoader();
+                    //document.getElementById('machine_id').remove();
+                    //document.getElementById('location_title').innerText = 'Terminal Location: ' 
+                    window.machineChart.machineLineData = []
+                    window.machineChart.lineData = []
+                    setTimeout(() => {
+                        alert('Error in Api');
+                    }, 0)
+                }
+            }
+            this.generateDataObject = function (start, end, param) {
+                let daysBetween = 0;
+                daysBetween = Math.round((end - start) / 86400000) + 1;
+                const generateData = new Array(daysBetween).fill();
+                let dates = {};
+                let currentDate = start;
+                generateData.map((el, index) => {
+                    dates = {
+                        ...dates,
+                        [this.getCorrectDateFormat(currentDate)]: param
+                    }
+                    currentDate += 86400000
+                })
+                console.log(dates)
+                return dates;
+            }
+            this.createMachineList = function () {
+                const map = new Map();
+                for (const item of this.res.KPRESPONSE.CHART_DATA_LIST) {
+                    if (!map.has(item.MACHINE_NUMBER)) {
+                        map.set(item.MACHINE_NUMBER, true);
+                        this.machineList.push({
+                            ...item
+                        });
+                    }
+                }
+
+            }
+            this.redoneData = function (initialData) {
+                let newDate = {};
+                const dateLength = Object.keys(this.dates).length;
+                Object.keys(this.dates).reduce((a, b, index) => {
+
+                        if (index % this.skip === 0 && index !== 0) {
+                            newDate = {
+                                ...newDate,
+                                [a]: {
+                                    APP_SALES: newDate[a].APP_SALES / this.skip,
+                                    CASH_SALES: newDate[a].CASH_SALES / this.skip,
+                                    CONTACTLESS_SALES: newDate[a].CONTACTLESS_SALES / this.skip,
+                                    terminal: newDate[a].terminal,
+                                    machineName: newDate[a].machineName
+                                }
+                            }
+                            a = b
+                        }
+                        if (index % this.skip !== 0 && dateLength - 1 === index) {
+                            newDate = {
+                                ...newDate,
+                                [a]: {
+                                    APP_SALES: newDate[a].APP_SALES / ((dateLength - 1) % this.skip),
+                                    CASH_SALES: newDate[a].CASH_SALES / ((dateLength - 1) % this.skip),
+                                    CONTACTLESS_SALES: (newDate[a].CONTACTLESS_SALES / (dateLength - 1 %
+                                        this.skip)),
+                                    terminal: newDate[a].terminal,
+                                    machineName: newDate[a].machineName
+                                }
+                            }
+                            a = b
+                        }
+                        newDate = {
+                            ...newDate,
+                            [a]: {
+                                APP_SALES: newDate[a] === undefined ? this.dates[b].APP_SALES :
+                                    newDate[a].APP_SALES + this.dates[b].APP_SALES,
+                                CASH_SALES: newDate[a] === undefined ? this.dates[b].CASH_SALES :
+                                    newDate[a].CASH_SALES + this.dates[b].CASH_SALES,
+                                CONTACTLESS_SALES: (newDate[a] === undefined ? this.dates[b]
+                                    .CONTACTLESS_SALES : newDate[a].CONTACTLESS_SALES + this.dates[b]
+                                    .CONTACTLESS_SALES),
+                                terminal: (newDate[a] === undefined ? this.dates[b].terminal : this.dates[a].terminal),
+                                machineName:  newDate[a] === undefined ? this.dates[b].machineName : this.dates[a].machineName,
+                            }
+
+                        }
+                        return a
+                    },
+                    this.getCorrectDateFormat(this.getMs(initialData))
+                );
+                return newDate
+            }
+            this.displayData = function (isCompressed, initialData, flag) {
+                if (flag) {
+                    this.machineLabel = [];
+                    this.res.KPRESPONSE.CHART_DATA_LIST.map((el) => {
+                        this.machineLabel.push(el.MACHINE_NUMBER)
+                        Object.keys(this.dates).map((item) => {
+                            if (item === el.TXN_DATE) {
+                                return this.dates = {
+                                    ...this.dates,
+                                    [item]: {
+                                        APP_SALES: +this.dates[item].APP_SALES + +el.APP_SALES,
+                                        CASH_SALES: +this.dates[item].CASH_SALES + +el
+                                            .CASH_SALES,
+                                        CONTACTLESS_SALES: +this.dates[item]
+                                            .CONTACTLESS_SALES + +el.CONTACTLESS_SALES,
+                                        terminal: el.TERMINAL_NUMBER,
+                                       machineName: {...this.dates[item].machineName, [el.MACHINE_NAME] : {value: +el.CONTACTLESS_SALES, name: el.MACHINE_NAME}}
+                                       
+                                    }
+                                }
+                            }
+                        })
+                    });
+                }
+             if (isCompressed) this.dates = this.redoneData(initialData);
+                this.appSales = Object.keys(this.dates).map(el => this.dates[el].APP_SALES);
+                this.cashSales = Object.keys(this.dates).map(el => this.dates[el].CASH_SALES);
+                this.displayTheTerminalData();
+                colors = [
+                    {
+                        backgroundColor: 'rgba(210, 7, 7, 0.1)',
+                        borderColor: 'rgba(255, 99, 132, 1)',             
+                    },
+                    {
+                        backgroundColor: 'rgba(54, 162, 235, 0.1)',
+                        borderColor: 'rgba(54, 162, 235, 1)',             
+                    },
+                    {
+                        backgroundColor: 'rgba(170, 2, 2, 0.1)',
+                        borderColor: 'rgba(140, 7, 4, 1)',             
+                    },
+                    {
+                        backgroundColor: 'rgba(134, 56, 90, 0.1)',
+                        borderColor: 'rgba(255, 99, 132, 1)',             
+                    },
+                ]
+                this.contactlessSales = Object.keys(this.dates).map(el => {
+                    return this.dates[el].CONTACTLESS_SALES
+                });
+                this.terminalData = []
+                
+                this.datasets = [];
+                let lineData = {}
+                this.machines.forEach((el ,index) => {
+                    lineData = Object.keys(this.dates).map((item) => {
+                        if(el.MACHINE_NAME === this.dates[item].machineName[el.MACHINE_NAME]?.name) {
+                            return this.dates[item].machineName[el.MACHINE_NAME]?.value
+                        }else {
+                            return 0
+                        }
+                    })
+                    this.datasets.push(
+                            {
+                                label: el.MACHINE_NAME,
+                                backgroundColor: colors[index].backgroundColor,
+                                borderColor: colors[index].borderColor,
+                                data: lineData
+                            }
+                        )           
+                })
+
+                this.datasets.push({
+                        label: 'Contactless sales',
+                        backgroundColor: "rgba(0,88,30,0.1)",
+                        borderColor: "#00581E",
+                        data: this.contactlessSales
+                    },
+                   )
+
+                this.lineData = {
+                    labels: Object.keys(this.dates),
+                    datasets: this.datasets
+                };
+            }
+            this.showTerminalInfo = function() {
+                
+                const removeDublicate = (state) => {
+                        const result = [];
+                        const map = new Map();
+                            for (const item of this.res.KPRESPONSE.CHART_DATA_LIST) {
+                                if(!map.has(item.MACHINE_NUMBER)){
+                                    map.set(item.MACHINE_NUMBER, true);
+                                    result.push({
+                                        ...item
+                                    });
+                                }
+                            }
+                        return result
+                    }
+
+                    this.machines = removeDublicate()
+
+                    
+
+                    const mainTerminalInfo = document.getElementById('mainTerminalInfo');
+                    let fullTerminalObject = {
+                        // '214': [{machineName: 'dsfs', machineNumber: 'dsff'} ]
+                    }
+
+                    Object.keys(this.terminalObject).forEach((el) => {
+                        this.machines.forEach((item) => {
+                            if(el === item.TERMINAL_NUMBER) {
+                                if(!fullTerminalObject[el]) fullTerminalObject[el] = []
+                                fullTerminalObject[el] = [...fullTerminalObject[el], {machineName: item.MACHINE_NAME, machineNumber: item.MACHINE_NUMBER, terminalLocation: item.LOCATION_NAME}]    
+                            }
+                        })
+                    })
+                    Object.keys(fullTerminalObject).forEach((el) => {
+                        if(![...mainTerminalInfo.children].length) {
+                            let terminalLocation = document.createElement('p');
+                            terminalLocation.setAttribute('id', 'location_title')
+                            terminalLocation.innerText = 'Terminal Location: ' + fullTerminalObject[el][0].terminalLocation
+
+                            let machineMapped = document.createElement('p')
+                            machineMapped.innerText = 'Machine mapped:'
+
+                            let machineDiv = document.createElement('div');
+                            machineDiv.setAttribute('id', 'machine_id')
+                            machineDiv.style.display = 'flex'
+                            machineDiv.style.width = '75%'
+                            machineDiv.style.flexDirection = 'column'
+                            machineDiv.style.alignItems = 'end'
+                            machineDiv.style.marginLeft = '110px'
+                            //machineDiv.classList.add('machineDiv');
+                            fullTerminalObject[el].forEach((item) => {
+                                let machineName_p = document.createElement('p')
+                                machineName_p.innerText = item.machineName + '(' + item.machineNumber + ')'
+                                // let machineNumber_p = document.createElement('p')
+                                // machineNumber_p.innerText = item.machineNumber
+
+                                //machineDiv.append(machineNumber_p)
+                                machineDiv.append(machineName_p)
+
+                                
+                            })
+                            mainTerminalInfo.append(terminalLocation)
+                            mainTerminalInfo.append(machineMapped)
+                            mainTerminalInfo.append(machineDiv)
+                        }
+                    
+                    })
+            }
+            this.displayTheTerminalData = async function (terminal) {
+                    this.terminalObject = {};
+                    this.res.KPRESPONSE.CHART_DATA_LIST.forEach((el) => {
+                        if(!(el.TERMINAL_NUMBER in  this.terminalObject)) {
+                            this.terminalObject[el.TERMINAL_NUMBER] = el.TERMINAL_NUMBER
+                        }
+                    })
+                    this.showTerminalInfo()
+            }
+            this.machineContactless = function(filterData) {
+                let result = {}
+                filterData.forEach((machine) => {             
+                    if(machine.MACHINE_NUMBER in result)  {
+                        return result[machine.MACHINE_NUMBER] = {...result[machine.MACHINE_NUMBER], CONTACTLESS_SALES: Number(result[machine.MACHINE_NUMBER].CONTACTLESS_SALES || 0) + Number(machine.CONTACTLESS_SALES)}
+                    }
+                    else return result[machine.MACHINE_NUMBER] = machine
+                })
+                this.machineLineData = Object.values(result)
+            }
+
+            this.createCanvas = function () {
+                   document.getElementById("linechart_machine").remove();
+                
+                const canvas = document.createElement('canvas');
+                canvas.id = 'linechart_machine';
+                canvas.height = 250;
+                canvas.style.resize = 'both';
+                const div = document.getElementById("linechart_machine_parent").appendChild(canvas);
+                const ctx = document.getElementById('linechart_machine').getContext('2d');
+
+                document.getElementById("machineBarChart").remove();
+                const canvas1 = document.createElement('canvas');
+                canvas1.id = 'machineBarChart';
+                canvas1.height = 300;
+                canvas1.style.resize = 'both';
+                const div1 = document.getElementById("machineBarChartParent").appendChild(canvas1);
+                const ctx1 = document.getElementById('machineBarChart').getContext('2d');
+
+                return {ctx, ctx1};
+            }
+        }
+
+        const skip = 5;
+        window.machineChart = new MachineChart(skip);
+        await window.machineChart.getDateRange(moment().subtract(3, 'month'), moment(), 'THREE_MONTH', false);
+        window.machineChart.updateData = { start: moment().subtract(3, 'month'), end: moment(), dayName: 'THREE_MONTH' };
+        pageSetUp()
+
+        
+ 
+        window.hzBarColors = [
+            {
+                backgroundColor: 'rgba(210, 7, 7, 1)',
+                borderColor: 'rgba(255, 99, 132, 1)',             
+            },
+            {
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgba(54, 162, 235, 1)',             
+            },
+            {
+                backgroundColor: 'rgba(170, 2, 2, 1)',
+                borderColor: 'rgba(140, 7, 4, 1)',             
+            },
+            {
+                backgroundColor: 'rgba(134, 56, 90, 1)',
+                borderColor: 'rgba(255, 99, 132, 1)',             
+            },
+            // {
+            //     backgroundColor: 'rgba(210, 7, 7, 1)',
+            //     borderColor: 'rgba(255, 99, 132, 1)',             
+            // },
+            // {
+            //     backgroundColor: 'rgba(210, 7, 7, 1)',
+            //     borderColor: 'rgba(255, 99, 132, 1)',             
+            // },
+            // {
+            //     backgroundColor: 'rgba(210, 7, 7, 1)',
+            //     borderColor: 'rgba(255, 99, 132, 1)',             
+            // },
+            // {
+            //     backgroundColor: 'rgba(210, 7, 7, 1)',
+            //     borderColor: 'rgba(255, 99, 132, 1)',             
+            // },
+            // {
+            //     backgroundColor: 'rgba(210, 7, 7, 1)',
+            //     borderColor: 'rgba(255, 99, 132, 1)',             
+            // }
+        ]
+
+        window.lineOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+            yAxes: [{
+                scaleLabel: {
+                    display: true,
+                    fontSize: 18,
+                    labelString: 'Pounds, £'
+                }
+            }],
+            xAxes: [{
+                scaleLabel: {
+                    display: true,
+                    fontSize: 18,
+                    labelString: 'Dates'
+                }
+            }],
+            },
+        };
+
+        let holeData = {all: 0}
+        machineChart.machineLineData.map(el => holeData = {...holeData, all: holeData.all + el.CONTACTLESS_SALES})
+
+        window.hzBarOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+        legend: {
+            position: "left",
+            align: 'center',
+            display: true,
+            labels: {
+                    //fontColor: 'rgb(255, 99, 132)'
+                    //padding: 65
+                }
+        },
+            scales: {
+            yAxes: [{
+                gridLines: {
+                drawTicks: false,
+                diaplay: false,
+                color: "transparent",
+                zeroLineColor: "transparent"
+                },
+                ticks: {
+                beginAtZero: true,
+                padding: 15,
+                fontSize: 16,
+                },
+                barPercentage: 0.9,
+                categoryPercentage: 0.9,
+            
+            }],
+            xAxes: [{
+                gridLines: {
+                diaplay: false,
+                color: "transparent",
+                        zeroLineColor: "transparent"
+                },
+                ticks: {
+                padding: 15,
+                beginAtZero: true,
+                max: holeData.all,
+                min: 0,
+                stepSize: 10,
+                }
+            }]
+            }
+        
+            }
+            let arrBarHzData = []
+            machineChart.machineLineData.forEach((el, index) => {
+                arrBarHzData.push({
+                    label: el.MACHINE_NAME,
+                    data: [el.CONTACTLESS_SALES],
+                    backgroundColor: window.hzBarColors[index].backgroundColor,
+                    borderColor: window.hzBarColors[index].borderColor,
+                    borderWidth: 2,
+                
+                },)
+            })
+            arrBarHzData.push({
+                label: 'Both',
+                data: [holeData.all],
+                backgroundColor: [
+                    'rgba(255, 206, 86, 0.2)',
+            
+                ],
+                borderColor: [
+                    'rgba(255, 206, 86, 1)',
+                ],
+                borderWidth: 2,
+            
+            })
+
+        window.hzBarDataSet = arrBarHzData
+        let canvas = document.getElementById("linechart_machine");
+        var ctx = canvas.getContext("2d");
+        var myNewChart = new Chart(ctx, {
+            type: 'line',
+            data: machineChart.lineData,
+            options: window.lineOptions
+        });
+        var ctx1 = document.getElementById('machineBarChart').getContext('2d');
+        var myChart = new Chart(ctx1, {
+        type: 'horizontalBar',
+        data: {
+        //labels: ['Machine contactless sales'],
+        datasets: window.hzBarDataSet
+    },
+    options: window.hzBarOptions
+});
+
+    })()
+
+</script>
+</html>
